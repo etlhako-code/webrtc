@@ -76,7 +76,7 @@ export class ChatComponent implements AfterViewInit {
     // this.transactions$.subscribe();
     this.dataService.messages$.subscribe(
       msg => {
-        // console.log('Received message: ' + msg.type);
+         console.log('Received message: ' + msg.type);
         switch (msg.type) {
           case 'offer':
             this.handleOfferMessage(msg.data);

@@ -24,7 +24,7 @@ export class DataService {
 
     if (!this.socket$ || this.socket$.closed) {
       this.socket$ = this.getNewWebSocket();
-
+       console.log("here");
       this.socket$.subscribe(
         // Called whenever there is a message from the server
         msg => {
@@ -32,6 +32,9 @@ export class DataService {
           this.messagesSubject.next(msg);
         }
       );
+    }else{
+      console.log("socket con failed", this.socket$.closed);
+      
     }
   }
 
