@@ -1,0 +1,18 @@
+{
+
+   "scripts": {
+
+      "start": "nodemon signalling_server.js"
+
+   },
+
+   "dependencies": {
+
+      "nodemon": "^2.0.15",
+
+      "ws": "^8.5.0"
+
+   }
+
+}
+
